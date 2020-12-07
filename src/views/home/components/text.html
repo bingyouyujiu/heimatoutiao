@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+ var a = [1, 2, 3]
+        var b = [1, 2, 3, 4, 5]
+    // var c = b.filter(t=>{
+        //12345
+        // return true
+        //45
+        // return t>3
+        // 123
+        // return a.includes(t)
+        // 45
+        // return !a.includes(t)
+        // 123
+        // let f = a.find(m => m === t)
+        // return f
+        //45
+        // let f = a.find(m => m === t)
+        // return !f
+        // })
+       
+       var c = a.filter(t => {
+        //    false
+           console.log(t);
+        //    find()方法是在当前元素集合内部查找，不包括自己
+        let f = b.find(m=>m === t )
+        console.log(f);
+        return f
+       })
+
+    //       var c=a.filter(t=>1 )
+      console.log(c)
+</script>
+
+</html>
